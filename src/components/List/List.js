@@ -8,21 +8,6 @@ const List = () => {
     
     const columns = useSelector(state => state.columns);
 
-    /*const addColumn = newColumn => {
-        setColumns([...columns, { id: shortid(), title: newColumn.title, icon: newColumn.icon, cards: [] }]);
-    }
-
-    const addCard = (newCard, columnId) => {
-        const columnsUpdated = columns.map(column => {
-            if(column.id === columnId)
-                return { ...column, cards: [...column.cards, { id: shortid(), title: newCard.title }]}
-            else
-                return column
-        })
-
-        setColumns(columnsUpdated);
-    };*/
-
     return(
         <div className={styles.List}>
             <header className={styles.header}>
