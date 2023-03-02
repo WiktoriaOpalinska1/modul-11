@@ -1,0 +1,31 @@
+@import '../../styles/settings.scss';
+
+.navBar{
+    background-color: darken($color-dark, 5%);
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    font-size: 24px;
+    .navList{
+        flex: 2;
+        list-style: none; 
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bolder;
+        a {
+          text-decoration: none; 
+          color: $color-light; 
+          padding-right: 2vw;
+        };
+    }
+    .navIcon{
+        text-decoration: none;  
+        i{
+            font-size: 24px;
+            color: $color-light;
+            padding-left: 2vw;;
+        }
+    }
+
+}
+
