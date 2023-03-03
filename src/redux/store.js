@@ -9,9 +9,10 @@ export const getFilteredCards = ({ cards, searchString }, columnId) => cards
   .filter(card => card.columnId === columnId && strContains(card.title, searchString));
   //for columns
 export const getAllColumns = state => state.columns;
-export const getAllColumnsByList = (columns, listId) => columns.filter(column => column.listId === listId)     
+export const getAllColumnsByList = ({columns}, listId) =>
+  columns.filter((column) => column.listId === listId);  
     //for lists
-export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId)
+export const getListById = ({ lists }, listId) => lists.find( list => list.id === listId );
 export const getAllLists = state => state.lists;
 
 // action creators
