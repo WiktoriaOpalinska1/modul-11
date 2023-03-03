@@ -16,7 +16,11 @@
           text-decoration: none; 
           color: $color-light; 
           padding-right: 2vw;
-        };
+        }; 
+        .linkActive{
+        color: $color-warning;
+        }
+    }
     }
     .navIcon{
         text-decoration: none;  
@@ -26,6 +30,5 @@
             padding-left: 2vw;;
         }
     }
-
-}
+   
 
