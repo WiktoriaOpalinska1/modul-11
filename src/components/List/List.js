@@ -5,21 +5,22 @@ import SearchForm from '../SearchForm/SearchForm';
 import { useSelector } from 'react-redux';
 import { getAllColumnsByList, getListById } from '../../redux/store';
 import { useParams } from 'react-router';
+import { Navigate } from 'react-router-dom';
 
 const List = () => {
 
     const { listId } = useParams()
-    
     const columns = useSelector((state) => getAllColumnsByList(state, listId));
-  const listData = useSelector((state) => getListById(state, listId));
+    const listData = useSelector((state) => getListById(state, listId));
 
+    if(!listData) return <Navigate to="/" />
     return (
         <div className={styles.list}>
           <header className={styles.header}>
             <h2 className={styles.title}>{listData.title}</h2>
           </header>
           <p className={styles.description}>{listData.description}</p>
-          <SearchForm />
+          <SearchForm searchString='' />
           <section className={styles.columns}>
             {columns.map(column =>
               <Column key={column.id} {...column}  />)}

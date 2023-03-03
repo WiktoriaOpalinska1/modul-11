@@ -57,8 +57,8 @@ const initialState = {
     },
     {
       id: '2',
-      title: 'List of Plants',
-      description: 'Test List where you can find 3 columns of plants'
+      title: 'List of Plants to water this week',
+      description: 'Test List with 3 columns of plants'
     },
   ]
 
