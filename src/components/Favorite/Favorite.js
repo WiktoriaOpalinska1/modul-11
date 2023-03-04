@@ -3,7 +3,7 @@ import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
 import FavoriteCards from '../FavoriteCards/FavoriteCards';
 import { useSelector } from 'react-redux';
-import { getFavCards} from '../../redux/store';
+import { getFavCards} from '../../redux/cardsRedux';
 import { Navigate } from 'react-router-dom';
 
 
