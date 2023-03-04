@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     return(
         <nav className={styles.navBar} >
-            <a href='/'className={styles.navIcon}><i class="fa-solid fa-list" ></i></a>
+            <a href='/'className={styles.navIcon}><i className="fa fa-list" ></i></a>
             <ul className={styles.navList}>
                 <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/">Home</NavLink></li>
                 <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/favorite">Favorite</NavLink></li>

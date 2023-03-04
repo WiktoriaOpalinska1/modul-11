@@ -10,4 +10,13 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    button{
+        border: none;
+        background-color: transparent;
+        font-size: 15px;
+        .isFavorite{
+            color: $color-warning;
+        }    
+    }
+    
 }
